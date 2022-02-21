@@ -1,8 +1,12 @@
 # Frontend
 Frontend Work
 
-![Capture100](https://user-images.githubusercontent.com/100128770/154943612-9e9daae0-46d2-49ed-aa63-ff1e704000d8.JPG)
-![Capture300](https://user-images.githubusercontent.com/100128770/154944037-0b449b62-212a-4c01-86b0-e7ea8a1f04be.JPG)
-![Capture200](https://user-images.githubusercontent.com/100128770/154943806-c661f0a2-17ae-495b-a310-8bd928cff26e.JPG)
+![image](https://user-images.githubusercontent.com/100128770/154944293-ace320d4-09c0-47e5-800c-8b532e93c900.png)
+![image](https://user-images.githubusercontent.com/100128770/154944301-24beff1a-9b86-44e2-b41c-eff471610f02.png)
+![image](https://user-images.githubusercontent.com/100128770/154944321-1f390b97-4036-4e8b-817c-0b754d804827.png)
+![image](https://user-images.githubusercontent.com/100128770/154944336-319eaff1-7c34-42f4-856f-a5008618ed71.png)
+![image](https://user-images.githubusercontent.com/100128770/154944353-3446cd7e-d1b3-44ce-a8e0-f5a27a2a1ad6.png)
+
+
 
 
