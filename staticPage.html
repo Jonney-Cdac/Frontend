@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Static</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">    
+
+</head>
+
+<body>
+    <header>
+        <div class="topHeader">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-12" style="display: flex; background-color: #015158;color: white;">
+                        <div class="col-md-6">
+                            <div class="icons" style="display: flex;">
+                                <img src="images/flag-icon.png" alt="NA">
+                                <span>Government of India</span>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="right-content">
+                                <a href="#main" class="login-links skip-link">Skip to main content</a>
+                                <a href="#" class="login-links">Sig In</a>
+                                <a href="#" class="login-links">Register</a>
+                                <span class="sizechanger">
+                                    <a id="text_resize_decrease" class="changer" href="#" onclick="decreaseFontSize()"
+                                        title="Decrease font size" role="link">-A</a>
+                                    <a id="text_resize_reset" class="changer" onclick="actualFontSize()" href="#"
+                                        title="Reset font size" role="link">A</a>
+                                    <a id="text_resize_increase" class="changer" onclick="increaseFontSize()" href="#"
+                                        title="Increase font size" role="link">+A</a>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav class="navbar navbar-expand-lg navbar-light "
+            style="background-color: #109079;font-weight: bold;height: 10vh;">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Company Logo</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Contact Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Resources</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false" onclick="show()">
+                                Useful Links
+                            </a>
+                            <ul class="dropdown-menu" id="dditems" aria-labelledby="navbarDropdown" onclick="hide()">
+                                <li><a class="dropdown-item" href="http://www.google.com" target="_blank">Google</a>
+                                </li>
+                                <li><a class="dropdown-item" href="http://www.twitter.com" target="_blank">Twitter</a>
+                                </li>
+                                <li><a class="dropdown-item" href="http://www.linkedin.com" target="_blank">Linkedin</a>
+                                </li>
+                                <li><a class="dropdown-item" href="http://www.instagram.com"
+                                        target="_blank">Instagram</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-light" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="col-md-12" id="a1">
+        <div class="showcase-1">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h1 class="heading1">Title of the Paragraph.</h1>
+                        <p class="para1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias quam
+                            consectetur harum molestiae ipsa explicabo quaerat laboriosam .
+                        </p>
+                        <button id="readbtn1" style="border-radius: 15px;border: none; padding: 15px;width: 200px;">Get
+                            Started</button>
+                        <button id="knowbtn1"
+                            style="border-radius: 15px;border: none; padding: 15px; width: 200px;">Know
+                            More</button>
+                    </div>
+                    <div class="col-md-6">
+                        <img src="images/character1.png" alt="NA"
+                            style="height: 380px;float: right;background-color: none;">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="showcase-2">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-6">
+                        <img src="images/image-1.png" alt="NA"
+                            style="width: 600px;height: 600px;float: left;background-color: none;">
+                    </div>
+                    <div class="col-md-6" id="main">
+                        <h1 class="heading2">Reached Main Section.</h1>
+                        <p class="para2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias quam
+                            consectetur harum molestiae ipsa explicabo quaerat laboriosam sit velit dolore eum iste
+                            quibusdam dolorem similique dolores itaque eveniet sunt alias, vero provident aut a. Sequi
+                            modi nihil ut, est accusamus explicabo ipsam! Odit magnam hic ipsam dolor. Nulla, ducimus
+                            ad!
+                        </p>
+                        <button id="readbtn2" style="border-radius: 15px;border: none; padding: 15px;width: 200px;">Read
+                            More</button>
+                        <!-- <button id="knowbtn2" style="border-radius: 15px;border: none; padding: 15px;width: 200px;">Know
+                            More</button> -->
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <hr>
+        <div class="showcase-3">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h1 class="heading3">Title of the Para</h1>
+                        <p class="para3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias quam
+                            consectetur harum molestiae ipsa explicabo quaerat laboriosam sit velit dolore eum iste
+                            quibusdam dolorem similique dolores itaque eveniet sunt alias, vero provident aut a. Sequi
+                            modi nihil ut, est accusamus explicabo ipsam! Odit magnam hic ipsam dolor. Nulla, ducimus
+                            ad!
+                        </p>
+                        <button id="readbtn1" style="border-radius: 15px;border: none; padding: 15px;width: 200px;">Read
+                            More</button>
+                        <button id="knowbtn1" style="border-radius: 15px;border: none; padding: 15px;width: 200px;">Know
+                            More</button>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="col-xl-4 col-lg-4 col-md-6">
+                            <div class="graph">
+                                <div class="graph-card">
+                                    <div class="graph-card-inner">
+                                        <div class="graph-card-front" id="g1">
+                                            <h4>Total Authentication Requests</h4>
+                                            <br>
+                                            <img src="images/graph-1.png" id="i1" alt="NA">
+
+                                        </div>
+                                        <div class="graph-card-back" id="g2">
+                                            <h4>Aadhaar Authentication Requests</h4>
+                                            <br>
+                                            <img src="images/graph-2.png" id="i1" alt="NA">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section id="about" class="sevrice-area sevrice-area-2 pt-50" style="background-color: #F4F9FF;">
+        <!-- Single Identity Across System Section -->
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-8 offset-xl-2 col-lg-8 offset-lg-2">
+                    <div class="section-titles mb-60 text-center">
+                        <h2 style="margin-top: 10px;">Single Identity across the system</h2>
+                        <p>Provide secure and simple access to citizen-centric various government services <br>—
+                            Anytime, Anywhere.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <!--Current SSO providers-->
+                <div class="col-xl-12 col-lg-12 col-md-12">
+                    <h4 style="text-align:center;">Current SSO Providers</h4>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-6">
+                    <a href="https://digilocker.nsso.dl6.in" target="_blank" style="text-decoration: none;">
+                        <div class="single-service text-center mb-30"
+                            style="background: #F1F1F1;border-radius: 32.5px;padding: 50px 20px 50px 20px;height: 227px;color: #263E56;">
+                            <div class="servie-icon">
+                                <img src="images/digiLocker_logo_01.png" alt="NA" style="width: 250px; height: 61px;">
+                                <h3 style="font-size: 20px; margin-top: 40px;">DigiLocker</h3>
+                            </div>
+
+                        </div>
+                    </a>
+                    <div class="service-text-2" style="font-family: Poppins;font-weight: 500;
+                    font-size: 14px;
+                    line-height: 21px;margin-top: 25px;">
+                        <p>DigiLocker aims at ‘Digital Empowerment’ of citizen by providing access to authentic digital
+                            documents to citizen’s digital document wallet.</p>
+                    </div>
+                </div>
+                <!-- ************************ -->
+                <div class="col-xl-4 col-lg-4 col-md-6">
+                    <a href="#" target="_blank" style="text-decoration: none;">
+                        <div class="single-service text-center mb-30"
+                            style="background: #F1F1F1;border-radius: 32.5px;padding: 50px 20px 50px 20px;height: 227px;color: #263E56;">
+                            <div class="servie-icon">
+                                <img src="images/e-pramaan.png" alt="NA" style="width: 90px; height: 61px;">
+                                <h3 style="font-size: 20px; margin-top: 40px;">e-Pramaan</h3>
+                            </div>
+
+                        </div>
+                    </a>
+                    <div class="service-text-2" style="font-family: Poppins;font-weight: 500;
+                        font-size: 14px;
+                        line-height: 21px;margin-top: 25px;">
+                        <p>DigiLocker aims at ‘Digital Empowerment’ of citizen by providing access to authentic digital
+                            documents to citizen’s digital document wallet.</p>
+                    </div>
+                </div>
+                <!-- ************************* -->
+                <div class="col-xl-4 col-lg-4 col-md-6">
+                    <a href="#" target="_blank" style="text-decoration: none;">
+                        <div class="single-service text-center mb-30"
+                            style="background: #F1F1F1;border-radius: 32.5px;padding: 50px 20px 50px 20px;height: 227px;color: #263E56;">
+                            <div class="servie-icon">
+                                <img src="images/jan-parichay-2.png" alt="NA" style="width: 250px; height: 61px;">
+                                <h3 style="font-size: 20px; margin-top: 40px;">Jan Parichay</h3>
+                            </div>
+
+                        </div>
+                    </a>
+                    <div class="service-text-2" style="font-family: Poppins;font-weight: 500;
+                        font-size: 14px;
+                        line-height: 21px;margin-top: 25px;">
+                        <p>DigiLocker aims at ‘Digital Empowerment’ of citizen by providing access to authentic digital
+                            documents to citizen’s digital document wallet.</p>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="row">
+                <!--Flipping Cards-->
+                <div class="col-xl-4 col-lg-4 col-md-6">
+                    <!-- flipping card 1 -->
+
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <h2> <strong> 320 </strong> <br> Total Services</h2>
+                            </div>
+                            <div class="flip-card-back">
+                                <p><strong>909658</strong> <br> Total Transactons</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-6">
+                    <!-- flipping card 2 -->
+
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <h2> <strong> 66 </strong> <br> ASA-AUA Services</h2>
+                            </div>
+                            <div class="flip-card-back">
+                                <p><strong>236</strong> <br> e-Pramaan Services</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-6">
+                    <!-- flipping card 3 -->
+
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <h2> <strong> 199687 </strong> <br> ASA-AUA Services</h2>
+                            </div>
+                            <div class="flip-card-back">
+                                <p><strong>148965358</strong> <br> e-Pramaan Transactons</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-arrow-circle-up"> </i></button>
+    <footer>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-6" style="background-color: #109079; color: white;">
+
+                    <div class="options-left" style="display: flex; margin:20px; float: left;">
+                        <ul>
+                            <h3>Title 1</h3>
+                            <li style="margin-left: 2px;line-height: 30px; color: #99d9d9; list-style: none;">Link1</li>
+                            <li style="margin-left: 2px;line-height: 30px;color: #99d9d9;list-style: none;">Link1</li>
+                            <li style="margin-left: 2px;line-height: 30px;color: #99d9d9;list-style: none;">Link1</li>
+                            <li style="margin-left: 2px;line-height: 30px;color: #99d9d9;list-style: none;">Link1</li>
+
+                        </ul>
+                        <ul>
+                            <h3>Title 2</h3>
+                            <li style="margin-left: 2px;line-height: 30px; color: #99d9d9; list-style: none;">Link2</li>
+                            <li style="margin-left: 2px;line-height: 30px; color: #99d9d9; list-style: none;">Link2</li>
+                            <li style="margin-left: 2px;line-height: 30px; color: #99d9d9; list-style: none;">Link2</li>
+                            <li style="margin-left: 2px;line-height: 30px; color: #99d9d9; list-style: none;">Link2</li>
+                        </ul>
+                        <ul>
+                            <h3>Title 3</h3>
+                            <li style="margin-left: 2px;line-height: 30px; color: #99d9d9; list-style: none;">Link3</li>
+                            <li style="margin-left: 2px;line-height: 30px; color: #99d9d9; list-style: none;">Link3</li>
+                            <li style="margin-left: 2px;line-height: 30px; color: #99d9d9; list-style: none;">Link3</li>
+                            <li style="margin-left: 2px;line-height: 30px; color: #99d9d9; list-style: none;">Link3</li>
+                        </ul>
+
+                        <ul>
+                            <h3>Title 4</h3>
+                            <li style="margin-left: 2px;line-height: 30px; color: #99d9d9; list-style: none;">Link4</li>
+                            <li style="margin-left: 2px;line-height: 30px; color: #99d9d9; list-style: none;">Link4</li>
+                            <li style="margin-left: 2px;line-height: 30px; color: #99d9d9; list-style: none;">Link4</li>
+                            <li style="margin-left: 2px;line-height: 30px; color: #99d9d9; list-style: none;">Link4</li>
+                        </ul>
+                    </div>
+
+                </div>
+
+                <div class="col-md-6" style="background-color: #109079; color: white;">
+
+                    <div class="options-right" style="display: flex; margin:20px; float: right;">
+                        <div class="top" style="margin-right: 200px;">
+                            <ul>
+                                <h3>Support</h3>
+                                <li style="margin-left: 20px;color: #99d9d9;">Link1</li>
+                                <li style="margin-left: 20px;color: #99d9d9;">Link1</li>
+
+
+                            </ul>
+                            <hr>
+                            <ul>
+                                <h3>Contact Us</h3>
+                                <li style="margin-left: 20px;color: #99d9d9;">Link2</li>
+                                <li style="margin-left: 20px;color: #99d9d9;">Link2</li>
+
+                            </ul>
+
+                        </div>
+                        <div class="bottom" style="margin-right: 50px;">
+                            <ul>
+                                <h3>References</h3>
+                                <li style="margin-left: 20px;color: #99d9d9;">Link3</li>
+                                <li style="margin-left: 20px;color: #99d9d9;">Link3</li>
+
+                            </ul>
+                            <hr>
+                            <ul>
+                                <h3>Donate</h3>
+                                <li style="margin-left: 20px;color: #99d9d9;">Link4</li>
+                                <li style="margin-left: 20px;color: #99d9d9;">Link4</li>
+
+                            </ul>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="col-md-12" style="background-color: #015158; color: white;">
+                    <div class="copyright">
+                        <a style="float: left; margin-left: 20px;">Copyright © 2022 ABCD. All Rights Reserved</a>
+                        <a style="float: right;margin-right: 20px;">Terms of Service | Privacy Policy</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script>
+        function show() {
+            document.getElementById('dditems').style.display = 'block';
+        }
+        function hide() {
+            document.getElementById('dditems').style.display = 'none';
+        }
+        function decreaseFontSize() {
+            document.querySelector('.heading1').style.fontSize = "30px";
+            document.querySelector('.para1').style.fontSize = "18px";
+            document.querySelector('.heading2').style.fontSize = "30px";
+            document.querySelector('.para2').style.fontSize = "18px";
+            document.querySelector('.heading3').style.fontSize = "30px";
+            document.querySelector('.para3').style.fontSize = "18px";
+        }
+        function actualFontSize() {
+            document.querySelector('.heading1').style.fontSize = "42px";
+            document.querySelector('.para1').style.fontSize = "21px";
+            document.querySelector('.heading2').style.fontSize = "42px";
+            document.querySelector('.para2').style.fontSize = "21px";
+            document.querySelector('.heading3').style.fontSize = "42px";
+            document.querySelector('.para3').style.fontSize = "21px";
+        }
+        function increaseFontSize() {
+            document.querySelector('.heading1').style.fontSize = "50px";
+            document.querySelector('.para1').style.fontSize = "25px";
+            document.querySelector('.heading2').style.fontSize = "50px";
+            document.querySelector('.para2').style.fontSize = "25px";
+            document.querySelector('.heading3').style.fontSize = "50px";
+            document.querySelector('.para3').style.fontSize = "25px";
+           
+        }
+
+
+        //Get the button
+        var mybutton = document.getElementById("myBtn");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+</body>
+
+</html>
